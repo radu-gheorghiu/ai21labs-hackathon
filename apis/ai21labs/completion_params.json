@@ -1,0 +1,61 @@
+{
+    "default": {
+        "model": "j1-grande-instruct",
+        "numResults": 1,
+        "maxTokens": 440,
+        "temperature": 0.15,
+        "topKReturn": 0,
+        "topP": 1,
+        "stopSequences": []
+    },
+    "suggest_recipes": {
+        "prompt": "Suggest a list of recipes based on the following ingredients that I have available: {0}.\n\n",
+        "model": "j1-grande-instruct",
+        "numResults": 1,
+        "maxTokens": 800,
+        "temperature": 0.35,
+        "topKReturn": 0,
+        "topP": 1,
+        "stopSequences": []
+    },
+    "generate_ingredients": {
+        "prompt": "Give me a list delimited with \"||\" only with the ingredients that I need for Eggplant rollatini?\nEggplant,|| Mozzarella,|| Tomato,|| Basil\n\n///\nGive me a list delimited with \"||\" only with the ingredients that I need for Gazpacho?\nTomato,|| Cucumber,|| Onion,|| Garlic,|| Olive Oil,|| Lemon Juice,|| Salt,|| Pepper\n\n///\nGive me a list delimited with \"||\" only with the ingredients that I need for Crostini?\nBread,|| Tomato,|| Mozzarella,|| Basil\n\n///\nGive me a list delimited with \"||\" only with the ingredients that I need for Cucumber tomato broccoli onion salad?\nCucumber,|| Tomato,|| Broccoli,|| Onion,|| Olive Oil,|| Lemon Juice,|| Salt,|| Pepper\n\n///\nGive me a list delimited with \"||\" only with the ingredients that I need for Cauliflower lemon banana soup?\nCauliflower,|| Lemon,|| Banana,|| Onion,|| Olive Oil,|| Garlic,|| Salt,|| Pepper\n\n///\nGive me a list delimited with \"||\" only with the ingredients that I need for Banana bread?\nBanana,|| Sugar,|| Flour,|| Butter,|| Milk,|| Vanilla,|| Salt,|| Pepper\n\n///\nGive me a list delimited with \"||\" only with the ingredients that I need for {0}?\n",
+        "model": "j1-grande-instruct",
+        "numResults": 1,
+        "maxTokens": 800,
+        "temperature": 0,
+        "topKReturn": 0,
+        "topP": 1,
+        "stopSequences": ["///"]
+    },
+    "list2_vs_list1": {
+        "prompt": "List 1:\nham\nduck\nmilk\n\nList 2:\nduck\neggs\nmilk\nparsley\ncheese\nham\ntomatoes\nsour cream\n\nItems missing: eggs, parsley, cheese, tomatoes, sour cream\n\n///\n\nList 1:\nmilk\nbutter, melted\nshredded cheddar cheese\n\nList 2:\nall-purpose flour\nteaspoon salt\nbutter, melted\nteaspoon sugar\nteaspoon dry yeast\nwater\nmilk\nshredded cooked ham\nshredded cheddar cheese\n\nItems missing: shredded cooked ham, all-purpose flour, teaspoon salt, teaspoon sugar, teaspoon dry yeast, water\n\n///\n\nList 1:\nmilk\nshredded cheddar cheese\n\nList 2:\nsalmon fillet\nmilk\nsalt\npepper\nshredded cheddar cheese\n\nItems missing: salmon fillet, teaspoon salt, teaspoon pepper\n\n///\n\nList 1:\ncucumber\ntomato\n\nList 2:\npepper\ncucumber\npasta\ntomato\nsalt\ngrilled chicken\n\nItems missing: pepper, pasta, salt, grilled chicken\n\n///\n\nList 1:\nwater\nyeast\n\nList 2:\nflour\nyeast\nsalt\nolive oil\nwater\n\nItems missing: flour, salt, olive oil\n\n///\n\nList 1:\ncabbage\nsalad\nmeat\nlettuce\n\nList 2:\ncabbage\nrice\ntomato\nonion\ngarlic\nolive oil\nsalt\npepper\n\nItems missing: rice, tomato, onion, garlic, olive oil, salt, pepper\n\n///\n\nList 1:\ngarlic\nonion\nmeat\ntomato\n\nList 2:\nitalian sausage\nbell pepper\nonion\ntomato\nolive oil\ngarlic\nsalt\npepper\n\nItems missing: italian sausage, bell pepper, olive oil, salt, pepper\n\n///\n\nList 1:\nonion\nbeef\ngarlic\ntomato\n\nList 2:\nbeef\nonion\ncarrot\ntomato\ncelery\ngarlic\nbay leaf\nsalt\npepper\n\nItems missing: carrot, celery, bay leaf, salt, pepper\n\n///\n\nList 1:\nonion\ngarlic\nbeef\nmeat\n\nList 2:\nbeef\nonion\nmushroom\ntomato\ngarlic\nflour\nbutter\nmilk\nsalt\npepper\n\nItems missing: mushroom, tomato, flour, butter, milk, salt, pepper\n\n///\n\nList 1:\ncarrot\npepper\nbroccoli\neggplant\n\nList 2:\nonion\nbell pepper\ntomato\nbell pepper\neggplant\ngarlic\nsalt\npepper\n\nItems missing: onion, bell pepper, tomato, bell pepper, garlic, salt, pepper\n\n///\n\n\nList 1:\ncauliflower\nsalad\ncourgette\nbanana\n\nList 2:\nbanana\nsugar\nflour\nbutter\nmilk\nvanilla\nsalt\npepper\n\nItems missing: sugar, flour, butter, milk, vanilla, salt, pepper\n\n///\n\nList 1:\ngarlic\nbroccoli\npepper\ncarrot\n\nList 2:\ngarlic \nbroccoli \npepper \ncarrot \nonion \nolive oil \nlemon fuice \nsalt \npepper\n\nItems missing: onion, olive oil, lemon fuice, salt, pepper\n\n///\n\nList 1:\ntomato\nmeat\ncarrot\n\nList 2:\nbeef\ntomato\npotato\nonion\ncarrot\nolive oil\ngarlic\nsalt\npepper\n\nItems missing: beef, potato, onion, carrot, olive oil, garlic, salt, pepper\n\n///\n\nList 1:\n{0}\n\nList 2:\n{1}\n\nItems missing:",
+        "model": "j1-grande-instruct",
+        "numResults": 1,
+        "maxTokens": 1000,
+        "temperature": 0.25,
+        "topKReturn": 0,
+        "topP": 1,
+        "stopSequences": ["///"]
+    },
+    "remove_allergens": {
+        "prompt": "Remove {0} from the following list: {1}.\n",
+        "model": "j1-grande-instruct",
+        "numResults": 1,
+        "maxTokens": 440,
+        "temperature": 0.15,
+        "topKReturn": 0,
+        "topP": 1,
+        "stopSequences": []
+    },
+    "suggest_hashtags": {
+        "prompt": "Extract important hashtags from the sentence: \n\n\"Girl lying on the beach with the sun falling on her hair and the waves smashing on the tips of her feet\"\n#girl #beach #sun #falling #hair #waves #smashing #feet\n///\n\n\"A chef working in a bustling kitchen, carefully preparing a meal for customers in a high-end restaurant\"\n#chef #kitchen #meal #restaurant\n///\n\nA peaceful beach scene with the sun setting over the ocean, casting a warm golden light over the water and sand. \n#beach #sunset #ocean #light\n///\n\nA couple enjoying a romantic dinner at a candle-lit restaurant.\n#couple #romantic #dinner #candle-lit #restaurant\n///\n\nA girl enjoying a science fiction book before going to sleep.\n#girl #reading #science #fiction #book #sleep #bedtime\n///\n\n{0}",
+        "model": "j1-grande-instruct",
+        "numResults": 1,
+        "maxTokens": 500,
+        "temperature": 0.7,
+        "topKReturn": 0,
+        "topP":1,
+        "stopSequences": ["///"]
+    }
+}
