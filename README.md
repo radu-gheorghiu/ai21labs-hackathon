@@ -7,6 +7,10 @@ Installing the aplication is done by cloning this repository and then running:
 
 `pip install -r requirements.txt`
 
+`pip install clarifai-grpc==8.11.0`
+
+`pip install protobuf==3.19.5`
+
 ### 🤔 What is this?
 
 This application is built on top of AI21Lab's Large Language Models and uses them as knowledge bases to help you reduce food waste and use existing ingredients in creative ways.
