@@ -19,6 +19,10 @@ This application is built on top of AI21Lab's Large Language Models and uses the
 
 How-to example: [A demo of how to interact with the application](https://www.youtube.com/playlist?list=PLmbqa7kiU8F9fGVrEcKu9NY_RRYbwLHWv)
 
+### Demo
+
+You can try out the application [here](https://35.226.40.23/).
+
 ### 🚀 What can this help with?
 
 There are 2 main areas where KitcheGenie can help with. These are, in order of complexity:
