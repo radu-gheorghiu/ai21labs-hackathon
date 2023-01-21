@@ -66,11 +66,11 @@ In our application we've also used the Stable Diffusion API from Stability AI to
 
 We've also used the same API to generate images of the grocery shopping:
 
-!["grocery_shopping"](response_images\17683627502023-01-20-23_17_22.527826.png)
+!["grocery_shopping"](response_images/lamagazin.png)
 
 As well as images of the final cooked recipe:
 
-!["recipe_cooked"](response_images\17527851032023-01-20-23_18_10.501142.png)
+!["recipe_cooked"](response_images/pasta.png)
 
 #### Clarifai
 After generating the image of the interior of the refrigerator, the image is sent to the [Clarifai](https://clarifai.com/) service to identify the ingredients and extract their names.
