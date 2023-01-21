@@ -58,6 +58,10 @@ Some of the places we've used this approach are:
 
     - We've used the same Jurassic-1 Instruct model to make it extract the most important words in a text and return them as hashtags.
 
+All of the settings we used for "training" the model with Few-Shot prompts, for the different scenarios mentioned above, are defined in [`completion_params.json`](apis\ai21labs\completion_params.json)
+
+---
+
 We have also used the Zero-shot Completion and Summarization models to extend our application and enrich the story in our demo.
 
 - We've used the Completion model to recommend recipes based on the ingredients selected in our user interface. Also, we've used this Completion model to let us know what are the ingredients for a selected recipe.
