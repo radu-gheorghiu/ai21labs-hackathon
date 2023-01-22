@@ -21,7 +21,7 @@ How-to example: [A demo of how to interact with the application](https://www.you
 
 ### Demo
 
-You can try out the application [here](https://35.226.40.23/).
+You can try out the application [here](http://34.136.12.178:8501/).
 
 ### 🚀 What can this help with?
 
