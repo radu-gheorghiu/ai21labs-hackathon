@@ -21,6 +21,7 @@ How-to example: [A demo of how to interact with the application](https://www.you
 
 #### Running the application locally
 
+- install Python 3.9.8 or newer
 - install the requirements for the environment mentioned above in the Quick Install
 - create your own KEY and SECRET for the following services: Stability AI (Stable Difussion - Dreambooth), Clarifai, AI21Labs
 - in each of the Python modules in the **apis** package, also mentioned above, add the KEY and SECRET values.
@@ -36,10 +37,13 @@ How-to example: [A demo of how to interact with the application](https://www.you
 
 #### Structure of the application
 
-- app.py - is the main Python module that contains the business logic and code for generating the Streamlit interface. It also handles the interactions with the web-application, after any button-press, by setting certain values in the `streamlit.session_state`
+- app.py - is the main Python module and the entry point in the application. It contains the business logic that ties all the APIs together and code for generating the Streamlit interface. It also handles the interactions with the web-application, after any button-press, by setting certain values in the `streamlit.session_state` (which is why some of the code is so nested)
+
 - **apis** package - contains all of the code required to interract with the 3rd party API's (StabilityAI, Clarifai and AI21Labs)
 - **images** folder - contains sample images for showing in the README
 - **response_images** folder - the folder where the StabilityAI images are downloaded, after each app call
+- **utils** package - contains different Python functions that are used to process the text response from AI21Labs requests, so that we can later use the text in the app
+- [completion_params.json](/apis/ai21labs/completion_params.json) - is a JSON file that is used to store all of the settings for the AI21Labs completion prompt requests that we make to the AI21Labs APIs. We use different settings for different prompts sent to the API, because we have multiple use cases for which we identified different optimal parameter settings.
 
 ----
 
