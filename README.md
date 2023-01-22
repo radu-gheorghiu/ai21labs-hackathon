@@ -26,12 +26,20 @@ How-to example: [A demo of how to interact with the application](https://www.you
 - in each of the Python modules in the **apis** package, also mentioned above, add the KEY and SECRET values.
         
         `os.environ["STABILITY_KEY"] = "<YOUR STABILITY KEY HERE>"` - for Stability AI (stable_difussion.py)
+        
         `PAT = "<ADD YOUR KEY HERE>"` - for Clarifai (clarifai.py)
+        
+        `API_KEY = "<ADD YOUR KEY HERE>"` - for AI21Labs (ai21_labs.py)
+        
+- open a command terminal and run `streamlit run app.py`
+- a web browser and tab should open with the application already running (please wait a few seconds at the beginning while our first API calls and processing is done)
 
 #### Structure of the application
 
-- app.py - is the main 
+- app.py - is the main Python module that contains the business logic and code for generating the Streamlit interface. It also handles the interactions with the web-application, after any button-press, by setting certain values in the `streamlit.session_state`
 - **apis** package - contains all of the code required to interract with the 3rd party API's (StabilityAI, Clarifai and AI21Labs)
+- **images** folder - contains sample images for showing in the README
+- **response_images** folder - the folder where the StabilityAI images are downloaded, after each app call
 
 ----
 
