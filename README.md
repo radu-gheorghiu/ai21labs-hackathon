@@ -21,7 +21,7 @@ How-to example: [A demo of how to interact with the application](https://www.you
 
 ### Demo
 
-You can try out the application [here](http://34.136.12.178:8501/).
+You can try out the application [here](http://34.136.12.178:8501/) (please use HTTP, not HTTPS, because we couldn't apply a certificate on the VM where we hosted our application)
 
 ### 🚀 What can this help with?
 
