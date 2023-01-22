@@ -47,7 +47,7 @@ How-to example: [A demo of how to interact with the application](https://www.you
 
 ----
 
-### Demo
+### 💻👨‍💻 Demo
 
 You can try out the application [here](http://34.136.12.178:8501/) (please use HTTP, not HTTPS, because we couldn't use HTTPS because our certificate is not recognized by our browser, because we used a static IP, not a public domain name)
 
