@@ -132,3 +132,7 @@ As well as images of the final cooked recipe:
 After generating the image of the interior of the refrigerator, the image is sent to the [Clarifai](https://clarifai.com/) service to identify the ingredients and extract their names.
 
 The names of the ingredients are returned and displayed in the application's multi-select element in the visual interface.
+
+# License
+
+© All rights are reserved and this repository is **NOT** Open Source or Free. You cannot modify or redistribute this code without explicit permission from the copyright holder.
